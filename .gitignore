@@ -54,9 +54,15 @@ typings/
 # dotenv environment variable files
 .env*
 
-# gatsby files
+# Gatsby files
 .cache/
 public
+
+# Gatsby Distribution
+build
+
+# Electron Distribution
+dist
 
 # Desktop Services Store on macOS
 .DS_Store
