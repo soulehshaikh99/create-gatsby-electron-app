@@ -1,11 +1,18 @@
 {
   "name": "create-gatsby-electron-app",
   "version": "0.1.0",
-  "private": true,
-  "license": "MIT",
-  "author": "Souleh Shaikh <author.souleh@thegeekytutor.com>",
   "description": "A simple starter project to get up and developing quickly with the blend of Gatsby and Electron JS for building a Native Desktop App on various OS Platforms like Windows, Linux and macOS using Electron Builder.",
   "main": "main.js",
+  "author": "Souleh Shaikh <author.souleh@thegeekytutor.com>",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soulehshaikh99/create-gatsby-electron-app"
+  },
+  "bugs": {
+    "url": "https://github.com/soulehshaikh99/create-gatsby-electron-app/issues"
+  },
   "build": {
     "icon": "src/images/gatsby-icon.png",
     "productName": "Gatsby and Electron App",
@@ -49,13 +56,6 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
     "wait-on": "^4.0.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/soulehshaikh99/create-gatsby-electron-app"
-  },
-  "bugs": {
-    "url": "https://github.com/soulehshaikh99/create-gatsby-electron-app/issues"
   },
   "keywords": [
     "application",
