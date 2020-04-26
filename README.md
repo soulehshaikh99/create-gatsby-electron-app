@@ -49,7 +49,7 @@ $ git clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
 // GitHub CLI Users
 $ gh repo clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
 
-// Change location to the cloned directory
+// Switch location to the cloned directory
 $ cd create-gatsby-electron-app
 
 // Install the dependencies
