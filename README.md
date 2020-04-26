@@ -45,20 +45,21 @@ But I strongly recommend using <em>yarn</em> as it is a better choice when compa
 
 #### Use this boilerplate
 
-```cmd
-<!-- Normal Git Users -->
-$ git clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
-    or
-<!-- GitHub CLI Users -->
-$ gh repo clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
+```bash
+# Normal Git Users
+git clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
+# GitHub CLI Users
+gh repo clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
 
-<!-- Switch location to the cloned directory -->
-$ cd create-gatsby-electron-app
+# Switch location to the cloned directory
+cd create-gatsby-electron-app
 
-<!-- Install the dependencies -->
-<!-- Yarn Users -->
-$ yarn install
-    or
-<!-- NPM Users -->
-$ npm install
+# Install dependencies
+yarn # or npm install
+
+# Run your app
+yarn run electron-dev # or npm run electron-dev
+
+# Package Your App
+yarn run electron-pack # or npm run electron-pack
 ```
