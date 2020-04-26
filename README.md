@@ -43,10 +43,19 @@ The aim of this project is to provide Web Developers using `gatsby.js` the power
 #### Use this boilerplate
 
 ```cmd
+// For Normal Git Users
 $ git clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
+    or
+// For GitHub CLI Users
+$ gh repo clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
+
+// Change location to the cloned directory
 $ cd create-gatsby-electron-app
 
+// Install the dependencies
+// For Yarn Users
 $ yarn install
     or
+// For NPM Users
 $ npm install
 ```
