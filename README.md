@@ -37,3 +37,16 @@ The aim of this project is to provide Web Developers using `gatsby.js` the power
 
 `wait-on` is used as it can wait for sockets, and http(s) resources to become available.
 <br />
+
+## Getting Started
+
+#### Use this boilerplate
+
+```cmd
+$ git clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
+$ cd create-gatsby-electron-app
+
+$ yarn install
+    or
+$ npm install
+```
