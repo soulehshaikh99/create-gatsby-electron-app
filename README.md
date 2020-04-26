@@ -53,9 +53,9 @@ $ gh repo clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
 $ cd create-gatsby-electron-app
 
 // Install the dependencies
-// For Yarn Users
+// Yarn Users
 $ yarn install
     or
-// For NPM Users
+// NPM Users
 $ npm install
 ```
