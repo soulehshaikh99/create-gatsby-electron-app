@@ -56,10 +56,9 @@ typings/
 
 # Gatsby files
 .cache/
-public
 
 # Gatsby Distribution
-build
+public
 
 # Electron Distribution
 dist
