@@ -19,7 +19,7 @@ The boilerplate code to get started creating Cross-platform Desktop Applications
 
 The aim of this project is to provide Web Developers using `gatsby.js` the power to create cross-platform desktop apps using `electron`. 
 
-### What packages does the project use?
+#### What packages does the project use?
 `electron` enables you to create desktop applications with pure JavaScript by providing a runtime with rich native (operating system) APIs. You could see it as a variant of the Node.js runtime that is focused on desktop applications instead of web servers.
 <br />
 
