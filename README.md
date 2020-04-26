@@ -47,19 +47,19 @@ But I strongly recommend using <em>yarn</em> as it is a better choice when compa
 
 ```bash
 # Normal Git Users
-git clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
+$ git clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
 # GitHub CLI Users
-gh repo clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
+$ gh repo clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
 
 # Switch location to the cloned directory
-cd create-gatsby-electron-app
+$ cd create-gatsby-electron-app
 
 # Install dependencies
-yarn # or npm install
+$ yarn # or npm install
 
 # Run your app
-yarn run electron-dev # or npm run electron-dev
+$ yarn run electron-dev # or npm run electron-dev
 
 # Package Your App
-yarn run electron-pack # or npm run electron-pack
+$ yarn run electron-pack # or npm run electron-pack
 ```
