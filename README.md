@@ -2,7 +2,7 @@
 <img alt="Electron Gatsby" src="https://raw.githubusercontent.com/soulehshaikh99/repo/master/svg/Electron_Gatsby.svg" width="550" />
 </div>
 <br />
-The boilerplate code to get started creating Cross-platform Desktop Applications with Electron and Gatsby.js as front-end technology.
+The boilerplate code to get started creating Cross-platform Desktop Apps with Electron and Gatsby.js as front-end technology.
 <br />
 <br />
 <div align="center">
