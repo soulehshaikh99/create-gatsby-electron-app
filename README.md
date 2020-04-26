@@ -30,6 +30,8 @@ The aim of this project is to provide Web Developers using `gatsby.js` the power
 <br />
 
 `gatsby.js` is used as a front-end technology for this Project.
+
+`gatsby-cli` is used to perform common functionality, such as creating a Gatsby application based on a starter, spinning up a hot-reloading local development server, and more!
 <br />
 
 `concurrently` is used to run multiple commands concurrently.
