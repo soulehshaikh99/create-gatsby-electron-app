@@ -17,7 +17,7 @@
     "icon": "src/images/gatsby-icon.png",
     "productName": "Gatsby and Electron App",
     "files": [
-      "build/**/*",
+      "public/**/*",
       "main.js"
     ]
   },
@@ -26,7 +26,6 @@
     "serve": "gatsby serve",
     "prebuild": "yarn run clean",
     "build": "gatsby build",
-    "postbuild": "move public build",
     "clean": "gatsby clean",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
