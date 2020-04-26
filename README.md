@@ -14,5 +14,16 @@ The boilerplate code to get started creating Cross-platform Desktop Applications
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 </div>
 
+## Overview
+
+The aim of this project is to provide Web Developers using `gatsby.js` the power to create cross-platform desktop apps using `electron`. 
+
+`gatsby.js` is used as a front-end technology for this Project.
+`electron-builder` is used as a complete solution to package and build a ready for distribution (supports Numerous target formats) Electron app with “auto update” support out of the box.
+`wait-on` is used for 
+
+
+The aim of this project is to remove the need of manually setting up electron apps using vue. electron-vue takes advantage of `vue-cli` for scaffolding, `webpack` with `vue-loader`, `electron-packager` or `electron-builder`, and some of the most used plugins like `vue-router`, `vuex`, and so much more.
+
 <!-- # create-gatsby-electron-app
 A simple starter project to get up and developing quickly with the blend of Gatsby and Electron JS for building a Native Desktop App on various OS Platforms like Windows, Linux and macOS using Electron Builder. -->
