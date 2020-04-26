@@ -24,15 +24,15 @@
   "scripts": {
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "prebuild": "yarn clean",
+    "prebuild": "yarn run clean",
     "build": "gatsby build",
     "postbuild": "move public build",
     "clean": "gatsby clean",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "electron": "wait-on http://localhost:8000 && electron .",
-    "electron-dev": "concurrently \"yarn start\" \"yarn electron\"",
-    "preelectron-pack": "yarn build",
+    "electron-dev": "concurrently \"yarn run start\" \"yarn run electron\"",
+    "preelectron-pack": "yarn run build",
     "electron-pack": "electron-builder"
   },
   "dependencies": {
