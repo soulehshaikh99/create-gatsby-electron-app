@@ -2,7 +2,9 @@
 <img alt="Electron Gatsby" src="https://raw.githubusercontent.com/soulehshaikh99/repo/master/svg/Electron_Gatsby.svg" width="550" />
 </div>
 <br />
-
+The boilerplate code to get started creating Cross-platform Desktop Applications with Electron and Gatsby.js as front-end technology.
+<br />
+<br />
 <div align="center">
 
 [![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)&nbsp;&nbsp;&nbsp;&nbsp;[![forthebadge](http://forthebadge.com/images/badges/makes-people-smile.svg)](http://forthebadge.com)<br />
