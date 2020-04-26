@@ -40,6 +40,9 @@ The aim of this project is to provide Web Developers using `gatsby.js` the power
 
 ## Getting Started
 
+**Note:** If you wish to use npm over yarn then modify package.json by replacing `yarn` with `npm` in electron-dev and preelectron-pack scripts.
+But I strongly recommend using <em>yarn</em> as it is a better choice when compared to <em>npm</em>.
+
 #### Use this boilerplate
 
 ```cmd
