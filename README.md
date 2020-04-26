@@ -48,7 +48,7 @@ But I strongly recommend using <em>yarn</em> as it is a better choice when compa
 ```bash
 # Normal Git Users
 $ git clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
-# or GitHub CLI Users
+# GitHub CLI Users
 $ gh repo clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
 
 # Switch location to the cloned directory
