@@ -66,3 +66,10 @@ $ yarn run electron-dev # or npm run electron-dev
 # Package Your App
 $ yarn run electron-pack # or npm run electron-pack
 ```
+
+#### Create this boilerplate from scratch (Manual Setup)
+
+##### 1) Install `gatsby-cli` globally
+```bash
+yarn global add gatsby-cli # or npm i -g gatsby-cli
+```
