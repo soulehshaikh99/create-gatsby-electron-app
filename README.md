@@ -61,10 +61,10 @@ $ cd create-gatsby-electron-app
 $ yarn # or npm install
 
 # Run your app
-$ yarn run electron-dev # or npm run electron-dev
+$ yarn electron-dev # or npm run electron-dev
 
 # Package Your App
-$ yarn run electron-pack # or npm run electron-pack
+$ yarn electron-pack # or npm run electron-pack
 ```
 
 ### Create this boilerplate from scratch (Manual Setup)
@@ -269,10 +269,10 @@ app.on('activate', function () {
 #### 12) Test drive your app
 ```bash
 # Run your app
-$ yarn run electron-dev # or npm run electron-dev
+$ yarn electron-dev # or npm run electron-dev
 
-# Package your app
-$ yarn run electron-pack # or npn run electron-pack
+# Package Your App
+$ yarn electron-pack # or npm run electron-pack
 ```
 
 <h3>Made with :heart: from Souleh</h3>
