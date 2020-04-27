@@ -265,4 +265,9 @@ app.on('activate', function () {
   ]
 }
 ```
+<h3>Made with :heart: from Souleh</h3>
 
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+<br/>
+<h3>:clipboard: License: </h3>
+Licensed under the <a href="https://github.com/soulehshaikh99/create-react-electron-app/blob/master/LICENSE">MIT License</a>.
