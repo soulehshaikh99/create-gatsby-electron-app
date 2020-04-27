@@ -270,6 +270,7 @@ app.on('activate', function () {
 ```bash
 # Run your app
 $ yarn run electron-dev # or npm run electron-dev
+
 # Package your app
 $ yarn run electron-pack # or npn run electron-pack
 ```
