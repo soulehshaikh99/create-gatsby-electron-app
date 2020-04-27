@@ -86,7 +86,7 @@ $ cd create-gatsby-electron-app
 
 #### 4) Move all dependencies to devDependencies using IDE / Text Editor
 
-```json
+```bash
 # It should look something like this
 "dependencies": {},
 "devDependencies": {
