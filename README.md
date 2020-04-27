@@ -280,7 +280,7 @@ $ yarn electron-dev # or npm run electron-dev
 $ yarn electron-pack # or npm run electron-pack
 ```
 
-<h3>😍 Made with :heart: from Souleh</h3>
+<h3>😍 Made with ❤️ from Souleh</h3>
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 <br/>
