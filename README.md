@@ -15,11 +15,11 @@ The boilerplate code to get started creating Cross-platform Desktop Apps with El
 
 </div>
 
-## Overview
+## ✒️ Overview
 
 The aim of this project is to provide Web Developers using `gatsby.js` the power to create cross-platform desktop apps using `electron`. 
 
-#### What packages does the project use?
+#### 🧐 What packages does the project use?
 **`electron`** enables you to create desktop applications with pure JavaScript by providing a runtime with rich native (operating system) APIs. You could see it as a variant of the Node.js runtime that is focused on desktop applications instead of web servers.
 <br />
 
@@ -40,12 +40,12 @@ The aim of this project is to provide Web Developers using `gatsby.js` the power
 **`wait-on`** is used as it can wait for sockets, and http(s) resources to become available.
 <br />
 
-## Getting Started
+## 🚀 Getting Started
 
 **Note:** If you wish to use npm over yarn then modify package.json by replacing `yarn` with `npm` in `prebuild`, `electron-dev` and `preelectron-pack` scripts.
 But I strongly recommend using <em>yarn</em> as it is a better choice when compared to <em>npm</em>.
 
-### Use this boilerplate
+### 🤓 Use this boilerplate
 
 ```bash
 # Clone the Project
@@ -67,7 +67,7 @@ $ yarn electron-dev # or npm run electron-dev
 $ yarn electron-pack # or npm run electron-pack
 ```
 
-### Create this boilerplate from scratch (Manual Setup)
+### 💫 Create this boilerplate from scratch (Manual Setup)
 
 #### 1) Install `gatsby-cli` globally
 ```bash
@@ -280,9 +280,9 @@ $ yarn electron-dev # or npm run electron-dev
 $ yarn electron-pack # or npm run electron-pack
 ```
 
-<h3>Made with :heart: from Souleh</h3>
+<h3>😍 Made with :heart: from Souleh</h3>
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 <br/>
-<h3>:clipboard: License: </h3>
+<h3>📋 License: </h3>
 Licensed under the <a href="https://github.com/soulehshaikh99/create-gatsby-electron-app/blob/master/LICENSE">MIT License</a>.
