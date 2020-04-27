@@ -265,6 +265,15 @@ app.on('activate', function () {
   ]
 }
 ```
+
+#### 12) Test drive your app
+```bash
+# Run your app
+$ yarn run electron-dev # or npm run electron-dev
+# Package your app
+$ yarn run electron-pack # or npn run electron-pack
+```
+
 <h3>Made with :heart: from Souleh</h3>
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
