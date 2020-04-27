@@ -20,24 +20,24 @@ The boilerplate code to get started creating Cross-platform Desktop Apps with El
 The aim of this project is to provide Web Developers using `gatsby.js` the power to create cross-platform desktop apps using `electron`. 
 
 #### What packages does the project use?
-`electron` enables you to create desktop applications with pure JavaScript by providing a runtime with rich native (operating system) APIs. You could see it as a variant of the Node.js runtime that is focused on desktop applications instead of web servers.
+**`electron`** enables you to create desktop applications with pure JavaScript by providing a runtime with rich native (operating system) APIs. You could see it as a variant of the Node.js runtime that is focused on desktop applications instead of web servers.
 <br />
 
-`electron-builder` is used as a complete solution to package and build a ready for distribution (supports Numerous target formats) Electron app with "auto update" support out of the box.
+**`electron-builder`** is used as a complete solution to package and build a ready for distribution (supports Numerous target formats) Electron app with "auto update" support out of the box.
 <br />
 
-`electron-serve` is used for Static file serving for Electron apps.
+**`electron-serve`** is used for Static file serving for Electron apps.
 <br />
 
-`gatsby.js` is used as a front-end technology for this Project.
+**`gatsby.js`** is used as a front-end technology for this Project.
 
-`gatsby-cli` is used to perform common functionality, such as creating a Gatsby application based on a starter, spinning up a hot-reloading local development server, and more!
+**`gatsby-cli`** is used to perform common functionality, such as creating a Gatsby application based on a starter, spinning up a hot-reloading local development server, and more!
 <br />
 
-`concurrently` is used to run multiple commands concurrently.
+**`concurrently`** is used to run multiple commands concurrently.
 <br />
 
-`wait-on` is used as it can wait for sockets, and http(s) resources to become available.
+**`wait-on`** is used as it can wait for sockets, and http(s) resources to become available.
 <br />
 
 ## Getting Started
