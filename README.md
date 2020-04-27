@@ -227,9 +227,17 @@ app.on('activate', function () {
 // code. You can also put them in separate files and require them here.
 ```
 
-10) Add electron-dev, preelectron-pack and electron-pack scripts. Make sure your scripts section in package.json looks like this
+##### 10) Add pre-build, electron, electron-dev, preelectron-pack and electron-pack scripts
 
-```json
+```bash
+# add this scripts
+"prebuild": "yarn run clean",
+"electron": "wait-on http://localhost:8000 && electron .",
+"electron-dev": "concurrently \"yarn run start\" \"yarn run electron\"",
+"preelectron-pack": "yarn run build",
+"electron-pack": "electron-builder"
+
+# you should end up with something similar
 "scripts": {
   "start": "gatsby develop",
   "serve": "gatsby serve",
@@ -244,3 +252,4 @@ app.on('activate', function () {
   "electron-pack": "electron-builder"
 },
 ```
+
