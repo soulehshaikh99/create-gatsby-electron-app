@@ -252,4 +252,17 @@ app.on('activate', function () {
   "electron-pack": "electron-builder"
 },
 ```
+##### 11) Add the following Electron Configuration in package.json
+**Note:** build configuration is used by electron-builder, modify it if you wish to add more packaging and native distribution options for different OS Platforms.
+```json
+"main": "main.js",
+"build": {
+  "icon": "src/images/gatsby-icon.png",
+  "productName": "Gatsby and Electron App",
+  "files": [
+    "public/**/*",
+    "main.js"
+  ]
+}
+```
 
