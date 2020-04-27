@@ -174,7 +174,7 @@ function createWindow () {
         webPreferences: {
             nodeIntegration: true
         },
-		icon: isDev() ? `${path.join(process.cwd(), 'src/images/favicon.ico')}` : `${path.join(__dirname, 'public/icons/icon-512x512.png')}`,
+		icon: isDev() ? `${path.join(process.cwd(), 'src/images/gatsby-icon.png')}` : `${path.join(__dirname, 'public/icons/icon-512x512.png')}`,
         show: false
     });
 
