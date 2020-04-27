@@ -71,5 +71,5 @@ $ yarn run electron-pack # or npm run electron-pack
 
 ##### 1) Install `gatsby-cli` globally
 ```bash
-yarn global add gatsby-cli # or npm i -g gatsby-cli
+$ yarn global add gatsby-cli # or npm i -g gatsby-cli
 ```
