@@ -86,10 +86,9 @@ $ cd create-gatsby-electron-app
 
 ##### 4) Move all dependencies to devDependencies using IDE / Text Editor
 
-```bash
+```json
 # It should look something like this
-"dependencies": {
-},
+"dependencies": {},
 "devDependencies": {
   "gatsby": "^2.20.35",
   "gatsby-image": "^2.3.5",
@@ -99,7 +98,7 @@ $ cd create-gatsby-electron-app
   "gatsby-plugin-sharp": "^2.5.7",
   "gatsby-source-filesystem": "^2.2.5",
   "gatsby-transformer-sharp": "^2.4.7",
-  "prettier": "2.0.4"
+  "prettier": "2.0.4",
   "prop-types": "^15.7.2",
   "react": "^16.12.0",
   "react-dom": "^16.12.0",
@@ -118,7 +117,130 @@ $ yarn add --dev electron electron-builder wait-on concurrently
 $ yarn add electron-serve # or npm i electron-serve
 ```
 
-##### 7) Install Production Dependency
+##### 7) Your dependencies should look something like this
+
+```json
+"dependencies": {
+  "electron-serve": "^1.0.0"
+},
+"devDependencies": {
+  "concurrently": "^5.2.0",
+  "electron": "^8.2.3",
+  "electron-builder": "^22.5.1",
+  "gatsby": "^2.20.35",
+  "gatsby-image": "^2.3.5",
+  "gatsby-plugin-manifest": "^2.3.7",
+  "gatsby-plugin-offline": "^3.1.5",
+  "gatsby-plugin-react-helmet": "^3.2.5",
+  "gatsby-plugin-sharp": "^2.5.7",
+  "gatsby-source-filesystem": "^2.2.5",
+  "gatsby-transformer-sharp": "^2.4.7",
+  "prettier": "2.0.4",
+  "prop-types": "^15.7.2",
+  "react": "^16.12.0",
+  "react-dom": "^16.12.0",
+  "react-helmet": "^6.0.0",
+  "wait-on": "^4.0.2"
+}
+```
+
+##### 8) Create main.js file (serves as entry point for Electron App's Main Process)
 ```bash
-$ yarn add electron-serve # or npm i electron-serve
+$ notepad.exe main.js # Windows Users
+$ touch main.js # Linux and macOS Users
+```
+
+##### 9) Paste the below code in main.js file
+```js
+// Modules to control application life and create native browser window
+const {app, BrowserWindow, dialog } = require('electron');
+const path = require('path');
+const serve = require('electron-serve');
+const loadURL = serve({directory: 'public'});
+
+// Keep a global reference of the window object, if you don't, the window will
+// be closed automatically when the JavaScript object is garbage collected.
+let mainWindow;
+
+function isDev() {
+    return !app.isPackaged;
+}
+
+function createWindow () {
+    // Create the browser window.
+    mainWindow = new BrowserWindow({
+        width: 800,
+        height: 600,
+        webPreferences: {
+            nodeIntegration: true
+        },
+		icon: isDev() ? `${path.join(process.cwd(), 'src/images/favicon.ico')}` : `${path.join(__dirname, 'public/icons/icon-512x512.png')}`,
+        show: false
+    });
+
+    // This block of code is intended for development purpose only.
+    // Delete this entire block of code when you are ready to package the application.
+    if(isDev()) {
+        mainWindow.loadURL('http://localhost:8000/');
+    } else {
+        //Do not delete this statement, Use this piece of code when packaging app for production environment
+		loadURL(mainWindow);
+    }
+
+    // Open the DevTools and also disable Electron Security Warning.
+    // process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = true;
+    // mainWindow.webContents.openDevTools();
+
+    // Emitted when the window is closed.
+    mainWindow.on('closed', function () {
+        // Dereference the window object, usually you would store windows
+        // in an array if your app supports multi windows, this is the time
+        // when you should delete the corresponding element.
+        mainWindow = null
+    });
+
+    // Emitted when the window is ready to be shown
+    // This helps in showing the window gracefully.
+    mainWindow.once('ready-to-show', () => {
+        mainWindow.show()
+    });
+}
+
+// This method will be called when Electron has finished
+// initialization and is ready to create browser windows.
+// Some APIs can only be used after this event occurs.
+app.on('ready', createWindow);
+
+// Quit when all windows are closed.
+app.on('window-all-closed', function () {
+    // On macOS it is common for applications and their menu bar
+    // to stay active until the user quits explicitly with Cmd + Q
+    if (process.platform !== 'darwin') app.quit()
+});
+
+app.on('activate', function () {
+    // On macOS it's common to re-create a window in the app when the
+    // dock icon is clicked and there are no other windows open.
+    if (mainWindow === null) createWindow()
+});
+// In this file you can include the rest of your app's specific main process
+// code. You can also put them in separate files and require them here.
+```
+
+10) Add electron-dev, preelectron-pack and electron-pack scripts. Make sure your scripts section in package.json looks like this
+
+```json
+"scripts": {
+  "start": "gatsby develop",
+  "serve": "gatsby serve",
+  "prebuild": "yarn run clean",
+  "build": "gatsby build",
+  "clean": "gatsby clean",
+  "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+  "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+  "electron": "wait-on http://localhost:8000 && electron .",
+  "electron-dev": "concurrently \"yarn run start\" \"yarn run electron\"",
+  "preelectron-pack": "yarn run build",
+  "electron-pack": "electron-builder"
+},
 ```
