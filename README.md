@@ -73,3 +73,13 @@ $ yarn run electron-pack # or npm run electron-pack
 ```bash
 $ yarn global add gatsby-cli # or npm i -g gatsby-cli
 ```
+
+##### 2) Create new project
+```bash
+$ gatsby new create-gatsby-electron-app
+```
+
+##### 3) Create new project
+```bash
+$ gatsby new create-gatsby-electron-app
+```
