@@ -174,7 +174,7 @@ function createWindow () {
         webPreferences: {
             nodeIntegration: true
         },
-		icon: isDev() ? `${path.join(process.cwd(), 'src/images/gatsby-icon.png')}` : `${path.join(__dirname, 'public/icons/icon-512x512.png')}`,
+        icon: isDev() ? `${path.join(process.cwd(), 'src/images/gatsby-icon.png')}` : `${path.join(__dirname, 'public/icons/icon-512x512.png')}`,
         show: false
     });
 
@@ -184,7 +184,7 @@ function createWindow () {
         mainWindow.loadURL('http://localhost:8000/');
     } else {
         //Do not delete this statement, Use this piece of code when packaging app for production environment
-		loadURL(mainWindow);
+        loadURL(mainWindow);
     }
 
     // Open the DevTools and also disable Electron Security Warning.
