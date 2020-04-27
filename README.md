@@ -270,4 +270,4 @@ app.on('activate', function () {
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 <br/>
 <h3>:clipboard: License: </h3>
-Licensed under the <a href="https://github.com/soulehshaikh99/create-react-electron-app/blob/master/LICENSE">MIT License</a>.
+Licensed under the <a href="https://github.com/soulehshaikh99/create-gatsby-electron-app/blob/master/LICENSE">MIT License</a>.
