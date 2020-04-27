@@ -45,7 +45,7 @@ The aim of this project is to provide Web Developers using `gatsby.js` the power
 **Note:** If you wish to use npm over yarn then modify package.json by replacing `yarn` with `npm` in `prebuild`, `electron-dev` and `preelectron-pack` scripts.
 But I strongly recommend using <em>yarn</em> as it is a better choice when compared to <em>npm</em>.
 
-#### Use this boilerplate
+### Use this boilerplate
 
 ```bash
 # Clone the Project
@@ -67,24 +67,24 @@ $ yarn run electron-dev # or npm run electron-dev
 $ yarn run electron-pack # or npm run electron-pack
 ```
 
-#### Create this boilerplate from scratch (Manual Setup)
+### Create this boilerplate from scratch (Manual Setup)
 
-##### 1) Install `gatsby-cli` globally
+#### 1) Install `gatsby-cli` globally
 ```bash
 $ yarn global add gatsby-cli # or npm i -g gatsby-cli
 ```
 
-##### 2) Create new project
+#### 2) Create new project
 ```bash
 $ gatsby new create-gatsby-electron-app
 ```
 
-##### 3) Change Directory
+#### 3) Change Directory
 ```bash
 $ cd create-gatsby-electron-app
 ```
 
-##### 4) Move all dependencies to devDependencies using IDE / Text Editor
+#### 4) Move all dependencies to devDependencies using IDE / Text Editor
 
 ```json
 # It should look something like this
@@ -106,18 +106,18 @@ $ cd create-gatsby-electron-app
 }
 ```
 
-##### 5) Install Development Dependencies
+#### 5) Install Development Dependencies
 ```bash
 $ yarn add --dev electron electron-builder wait-on concurrently
 # npm i -D electron electron-builder wait-on concurrently
 ```
 
-##### 6) Install Production Dependency
+#### 6) Install Production Dependency
 ```bash
 $ yarn add electron-serve # or npm i electron-serve
 ```
 
-##### 7) Your dependencies should look something like this
+#### 7) Your dependencies should look something like this
 
 ```json
 "dependencies": {
@@ -144,13 +144,13 @@ $ yarn add electron-serve # or npm i electron-serve
 }
 ```
 
-##### 8) Create main.js file (serves as entry point for Electron App's Main Process)
+#### 8) Create main.js file (serves as entry point for Electron App's Main Process)
 ```bash
 $ notepad.exe main.js # Windows Users
 $ touch main.js # Linux and macOS Users
 ```
 
-##### 9) Paste the below code in main.js file
+#### 9) Paste the below code in main.js file
 ```js
 // Modules to control application life and create native browser window
 const {app, BrowserWindow, dialog } = require('electron');
@@ -227,7 +227,7 @@ app.on('activate', function () {
 // code. You can also put them in separate files and require them here.
 ```
 
-##### 10) Add pre-build, electron, electron-dev, preelectron-pack and electron-pack scripts
+#### 10) Add pre-build, electron, electron-dev, preelectron-pack and electron-pack scripts
 
 ```bash
 # add this scripts
@@ -252,7 +252,7 @@ app.on('activate', function () {
   "electron-pack": "electron-builder"
 },
 ```
-##### 11) Add the following Electron Configuration in package.json
+#### 11) Add the following Electron Configuration in package.json
 **Note:** build configuration is used by electron-builder, modify it if you wish to add more packaging and native distribution options for different OS Platforms.
 ```json
 "main": "main.js",
