@@ -79,7 +79,46 @@ $ yarn global add gatsby-cli # or npm i -g gatsby-cli
 $ gatsby new create-gatsby-electron-app
 ```
 
-##### 3) Create new project
+##### 3) Change Directory
 ```bash
-$ gatsby new create-gatsby-electron-app
+$ cd create-gatsby-electron-app
+```
+
+##### 4) Move all dependencies to devDependencies using IDE / Text Editor
+
+```bash
+# It should look something like this
+"dependencies": {
+},
+"devDependencies": {
+  "gatsby": "^2.20.35",
+  "gatsby-image": "^2.3.5",
+  "gatsby-plugin-manifest": "^2.3.7",
+  "gatsby-plugin-offline": "^3.1.5",
+  "gatsby-plugin-react-helmet": "^3.2.5",
+  "gatsby-plugin-sharp": "^2.5.7",
+  "gatsby-source-filesystem": "^2.2.5",
+  "gatsby-transformer-sharp": "^2.4.7",
+  "prettier": "2.0.4"
+  "prop-types": "^15.7.2",
+  "react": "^16.12.0",
+  "react-dom": "^16.12.0",
+  "react-helmet": "^6.0.0"
+}
+```
+
+##### 5) Install Development Dependencies
+```bash
+$ yarn add --dev electron electron-builder wait-on concurrently
+# npm i -D electron electron-builder wait-on concurrently
+```
+
+##### 6) Install Production Dependency
+```bash
+$ yarn add electron-serve # or npm i electron-serve
+```
+
+##### 7) Install Production Dependency
+```bash
+$ yarn add electron-serve # or npm i electron-serve
 ```
