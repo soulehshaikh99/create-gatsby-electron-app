@@ -230,14 +230,14 @@ app.on('activate', function () {
 #### 10) Add pre-build, electron, electron-dev, preelectron-pack and electron-pack scripts
 
 ```bash
-# add this scripts
+# Add this scripts
 "prebuild": "yarn run clean",
 "electron": "wait-on http://localhost:8000 && electron .",
 "electron-dev": "concurrently \"yarn run start\" \"yarn run electron\"",
 "preelectron-pack": "yarn run build",
 "electron-pack": "electron-builder"
 
-# you should end up with something similar
+# You should end up with something similar
 "scripts": {
   "start": "gatsby develop",
   "serve": "gatsby serve",
@@ -250,7 +250,7 @@ app.on('activate', function () {
   "electron-dev": "concurrently \"yarn run start\" \"yarn run electron\"",
   "preelectron-pack": "yarn run build",
   "electron-pack": "electron-builder"
-},
+}
 ```
 #### 11) Add the following Electron Configuration in package.json
 **Note:** build configuration is used by electron-builder, modify it if you wish to add more packaging and native distribution options for different OS Platforms.
