@@ -275,6 +275,11 @@ $ yarn electron-dev # or npm run electron-dev
 $ yarn electron-pack # or npm run electron-pack
 ```
 
+### 💯 Result
+<div align="center">
+<img alt="Electron Gatsby" src="https://raw.githubusercontent.com/soulehshaikh99/repo/master/png/create-gatsby-electron-app.png" width="550" />
+</div>
+
 <h3>😍 Made with ❤️ from Souleh</h3>
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
