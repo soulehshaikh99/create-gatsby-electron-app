@@ -277,7 +277,7 @@ $ yarn electron-pack # or npm run electron-pack
 
 ### 💯 Result
 <div align="center">
-<img alt="Electron Gatsby" src="https://raw.githubusercontent.com/soulehshaikh99/repo/master/png/create-gatsby-electron-app.png" width="550" />
+<img alt="Electron Gatsby" src="https://raw.githubusercontent.com/soulehshaikh99/repo/master/png/create-gatsby-electron-app.png" />
 </div>
 
 <h3>😍 Made with ❤️ from Souleh</h3>
