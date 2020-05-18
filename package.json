@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
-    "electron": "^8.2.3",
+    "electron": "^8.3.0",
     "electron-builder": "^22.5.1",
     "gatsby": "^2.20.25",
     "gatsby-image": "^2.3.4",
