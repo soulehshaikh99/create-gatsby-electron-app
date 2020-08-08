@@ -1,5 +1,5 @@
 <div align="center">
-<img alt="Electron Gatsby" src="https://raw.githubusercontent.com/soulehshaikh99/repo/master/svg/Electron_Gatsby.svg" width="550" />
+<img alt="Electron Gatsby" src="https://raw.githubusercontent.com/soulehshaikh99/assets/master/create-electron-framework-app/readme/svg/Electron_Gatsby.svg" width="550" />
 </div>
 <br />
 The boilerplate code to get started creating Cross-platform Desktop Apps with Electron and Gatsby.js as front-end technology.
@@ -277,7 +277,7 @@ $ yarn electron-pack # or npm run electron-pack
 
 ### 💯 Result
 <div align="center">
-<img alt="Electron Gatsby" src="https://raw.githubusercontent.com/soulehshaikh99/repo/master/png/create-gatsby-electron-app.png" />
+<img alt="Electron Gatsby" src="https://raw.githubusercontent.com/soulehshaikh99/assets/master/create-electron-framework-app/readme/png/create-gatsby-electron-app.png" />
 </div>
 
 <h3>😍 Made with ❤️ from Souleh</h3>
