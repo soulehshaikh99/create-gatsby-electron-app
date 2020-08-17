@@ -63,11 +63,11 @@ public
 # Electron Distribution
 dist
 
+# Project Build Automation Directory
+private
+
 # Desktop Services Store on macOS
 .DS_Store
-
-# Commit Messages File
-create-gatsby-electron-app-commits.txt
 
 # Yarn
 yarn-error.log
