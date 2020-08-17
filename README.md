@@ -64,17 +64,21 @@ $ yarn electron-pack # or npm run electron-pack
 
 ### 💫 Create this boilerplate from scratch (Manual Setup)
 
-#### 1) Install `gatsby-cli` globally
+#### 1) Start by installing `gatsby-cli` globally
+
 ```bash
-$ yarn global add gatsby-cli # or npm i -g gatsby-cli
+$ yarn global add gatsby-cli 
+# npm i -g gatsby-cli
 ```
 
 #### 2) Create new project
+
 ```bash
 $ gatsby new create-gatsby-electron-app
 ```
 
 #### 3) Change Directory
+
 ```bash
 $ cd create-gatsby-electron-app
 ```
@@ -85,29 +89,31 @@ $ cd create-gatsby-electron-app
 # It should look something like this
 "dependencies": {},
 "devDependencies": {
-  "gatsby": "^2.20.35",
-  "gatsby-image": "^2.3.5",
-  "gatsby-plugin-manifest": "^2.3.7",
-  "gatsby-plugin-offline": "^3.1.5",
-  "gatsby-plugin-react-helmet": "^3.2.5",
-  "gatsby-plugin-sharp": "^2.5.7",
-  "gatsby-source-filesystem": "^2.2.5",
-  "gatsby-transformer-sharp": "^2.4.7",
-  "prettier": "2.0.4",
+  "gatsby-image": "^2.4.15",
+  "gatsby-plugin-manifest": "^2.4.22",
+  "gatsby-plugin-offline": "^3.2.23",
+  "gatsby-plugin-react-helmet": "^3.3.10",
+  "gatsby-plugin-sharp": "^2.6.26",
+  "gatsby-source-filesystem": "^2.3.24",
+  "gatsby-transformer-sharp": "^2.5.12",
+  "gatsby": "^2.24.41",
+  "prettier": "2.0.5",
   "prop-types": "^15.7.2",
-  "react": "^16.12.0",
   "react-dom": "^16.12.0",
-  "react-helmet": "^6.0.0"
+  "react-helmet": "^6.1.0",
+  "react": "^16.12.0",
 }
 ```
 
 #### 5) Install Development Dependencies
+
 ```bash
 $ yarn add --dev electron electron-builder wait-on concurrently
 # npm i -D electron electron-builder wait-on concurrently
 ```
 
 #### 6) Install Production Dependency
+
 ```bash
 $ yarn add electron-serve # or npm i electron-serve
 ```
@@ -119,30 +125,35 @@ $ yarn add electron-serve # or npm i electron-serve
   "electron-serve": "^1.0.0"
 },
 "devDependencies": {
-  "concurrently": "^5.2.0",
-  "electron": "^8.2.3",
-  "electron-builder": "^22.5.1",
-  "gatsby": "^2.20.35",
-  "gatsby-image": "^2.3.5",
-  "gatsby-plugin-manifest": "^2.3.7",
-  "gatsby-plugin-offline": "^3.1.5",
-  "gatsby-plugin-react-helmet": "^3.2.5",
-  "gatsby-plugin-sharp": "^2.5.7",
-  "gatsby-source-filesystem": "^2.2.5",
-  "gatsby-transformer-sharp": "^2.4.7",
-  "prettier": "2.0.4",
+  "concurrently": "^5.3.0",
+  "electron-builder": "^22.8.0",
+  "electron": "^9.2.0",
+  "gatsby-image": "^2.4.15",
+  "gatsby-plugin-manifest": "^2.4.22",
+  "gatsby-plugin-offline": "^3.2.23",
+  "gatsby-plugin-react-helmet": "^3.3.10",
+  "gatsby-plugin-sharp": "^2.6.26",
+  "gatsby-source-filesystem": "^2.3.24",
+  "gatsby-transformer-sharp": "^2.5.12",
+  "gatsby": "^2.24.41",
+  "prettier": "2.0.5",
   "prop-types": "^15.7.2",
-  "react": "^16.12.0",
   "react-dom": "^16.12.0",
-  "react-helmet": "^6.0.0",
-  "wait-on": "^4.0.2"
-}
+  "react-helmet": "^6.1.0",
+  "react": "^16.12.0",
+  "wait-on": "^5.2.0"
+},
 ```
 
 #### 8) Create main.js file (serves as entry point for Electron App's Main Process)
+
 ```bash
-$ notepad.exe main.js # Windows Users
-$ touch main.js # Linux and macOS Users
+# Windows Users
+$ fsutil file createnew main.js 0
+# notepad main.js 
+
+# Linux and macOS Users
+$ touch main.js
 ```
 
 #### 9) Paste the below code in main.js file
@@ -227,42 +238,48 @@ app.on('activate', function () {
 // code. You can also put them in separate files and require them here.
 ```
 
-#### 10) Add pre-build, electron, electron-dev, preelectron-pack and electron-pack scripts
+#### 10) Update the script section of `package.json`
 
 ```bash
 # Add this scripts
 "prebuild": "yarn run clean",
 "electron": "wait-on http://localhost:8000 && electron .",
-"electron-dev": "concurrently \"yarn run start\" \"yarn run electron\"",
+"electron-dev": "concurrently \"yarn run develop\" \"yarn run electron\"",
 "preelectron-pack": "yarn run build",
 "electron-pack": "electron-builder"
 
 # You should end up with something similar
 "scripts": {
-  "start": "gatsby develop",
+  "develop": "gatsby develop",
   "serve": "gatsby serve",
   "prebuild": "yarn run clean",
   "build": "gatsby build",
   "clean": "gatsby clean",
-  "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+  "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
   "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
   "electron": "wait-on http://localhost:8000 && electron .",
-  "electron-dev": "concurrently \"yarn run start\" \"yarn run electron\"",
+  "electron-dev": "concurrently \"yarn run develop\" \"yarn run electron\"",
   "preelectron-pack": "yarn run build",
   "electron-pack": "electron-builder"
 }
 ```
-#### 11) Add the following Electron Configuration in package.json
+#### 11) Add the following configuration in `package.json`
+
 **Note:** build configuration is used by electron-builder, modify it if you wish to add more packaging and native distribution options for different OS Platforms.
-```json
-"main": "main.js",
+
+```bash
+"name": "create-gatsby-electron-app",  # By default it is gatsby-starter-default
+"main": "main.js",  # Application Entry Point
 "build": {
   "icon": "src/images/gatsby-icon.png",
   "productName": "Gatsby and Electron App",
   "files": [
     "public/**/*",
     "main.js"
-  ]
+  ],
+  "win": {},  # Windows Specific Configuration
+  "linux": {},  # Linux Specific Configuration
+  "mac": {}  # MacOs Specific Configuration
 }
 ```
 
@@ -276,13 +293,15 @@ $ yarn electron-pack # or npm run electron-pack
 ```
 
 ### 💯 Result
+
 <div align="center">
-<img alt="Electron Gatsby" src="https://raw.githubusercontent.com/soulehshaikh99/assets/master/create-electron-framework-app/readme/png/create-gatsby-electron-app.png" />
+<img alt="Electron Gatsby Window Screeenshot" src="https://raw.githubusercontent.com/soulehshaikh99/assets/master/create-electron-framework-app/readme/png/create-gatsby-electron-app.png" />
 </div>
 
 <h3>😍 Made with ❤️ from Souleh</h3>
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 <br/>
+
 <h3>📋 License: </h3>
 Licensed under the <a href="https://github.com/soulehshaikh99/create-gatsby-electron-app/blob/master/LICENSE">MIT License</a>.
