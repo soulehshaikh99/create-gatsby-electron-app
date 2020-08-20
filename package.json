@@ -19,7 +19,10 @@
     "files": [
       "public/**/*",
       "main.js"
-    ]
+    ],
+    "win": {},
+    "linux": {},
+    "mac": {}
   },
   "scripts": {
     "build": "gatsby build",
