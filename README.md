@@ -44,7 +44,10 @@ But I strongly recommend using <em>yarn</em> as it is a better choice when compa
 
 ```bash
 # Clone the Project
-# GitHub CLI Users
+
+# Use degit scaffolding tool
+$ npx degit soulehshaikh99/create-gatsby-electron-app create-gatsby-electron-app
+# or GitHub CLI Users
 $ gh repo clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
 # or Normal Git Users
 $ git clone https://github.com/soulehshaikh99/create-gatsby-electron-app.git
