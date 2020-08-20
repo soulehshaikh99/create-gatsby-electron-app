@@ -67,7 +67,7 @@ $ yarn electron-pack # or npm run electron-pack
 #### 1) Start by installing `gatsby-cli` globally
 
 ```bash
-$ yarn global add gatsby-cli 
+$ yarn global add gatsby-cli
 # npm i -g gatsby-cli
 ```
 
@@ -89,19 +89,19 @@ $ cd create-gatsby-electron-app
 # It should look something like this
 "dependencies": {},
 "devDependencies": {
-  "gatsby-image": "^2.4.15",
-  "gatsby-plugin-manifest": "^2.4.22",
+  "gatsby-image": "^2.4.16",
+  "gatsby-plugin-manifest": "^2.4.23",
   "gatsby-plugin-offline": "^3.2.23",
   "gatsby-plugin-react-helmet": "^3.3.10",
-  "gatsby-plugin-sharp": "^2.6.26",
+  "gatsby-plugin-sharp": "^2.6.27",
   "gatsby-source-filesystem": "^2.3.24",
-  "gatsby-transformer-sharp": "^2.5.12",
-  "gatsby": "^2.24.41",
+  "gatsby-transformer-sharp": "^2.5.13",
+  "gatsby": "^2.24.47",
   "prettier": "2.0.5",
   "prop-types": "^15.7.2",
-  "react-dom": "^16.12.0",
+  "react-dom": "^16.13.1",
   "react-helmet": "^6.1.0",
-  "react": "^16.12.0",
+  "react": "^16.13.1",
 }
 ```
 
@@ -127,22 +127,22 @@ $ yarn add electron-serve # or npm i electron-serve
 "devDependencies": {
   "concurrently": "^5.3.0",
   "electron-builder": "^22.8.0",
-  "electron": "^9.2.0",
-  "gatsby-image": "^2.4.15",
-  "gatsby-plugin-manifest": "^2.4.22",
+  "electron": "^9.2.1",
+  "gatsby-image": "^2.4.16",
+  "gatsby-plugin-manifest": "^2.4.23",
   "gatsby-plugin-offline": "^3.2.23",
   "gatsby-plugin-react-helmet": "^3.3.10",
-  "gatsby-plugin-sharp": "^2.6.26",
+  "gatsby-plugin-sharp": "^2.6.27",
   "gatsby-source-filesystem": "^2.3.24",
-  "gatsby-transformer-sharp": "^2.5.12",
-  "gatsby": "^2.24.41",
+  "gatsby-transformer-sharp": "^2.5.13",
+  "gatsby": "^2.24.47",
   "prettier": "2.0.5",
   "prop-types": "^15.7.2",
-  "react-dom": "^16.12.0",
+  "react-dom": "^16.13.1",
   "react-helmet": "^6.1.0",
-  "react": "^16.12.0",
+  "react": "^16.13.1",
   "wait-on": "^5.2.0"
-},
+}
 ```
 
 #### 8) Create main.js file (serves as entry point for Electron App's Main Process)
@@ -250,13 +250,13 @@ app.on('activate', function () {
 
 # You should end up with something similar
 "scripts": {
-  "develop": "gatsby develop",
-  "serve": "gatsby serve",
-  "prebuild": "yarn run clean",
   "build": "gatsby build",
-  "clean": "gatsby clean",
+  "develop": "gatsby develop",
   "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+  "serve": "gatsby serve",
+  "clean": "gatsby clean",
   "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+  "prebuild": "yarn run clean",
   "electron": "wait-on http://localhost:8000 && electron .",
   "electron-dev": "concurrently \"yarn run develop\" \"yarn run electron\"",
   "preelectron-pack": "yarn run build",
